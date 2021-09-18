@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuesioner Pendataan Produksi Perikanan Tangkap</title>
+    <link rel="icon" type="image/png" href="iconkkp.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div align="center">
+    <img src="logokkp.png" alt="Logo KKP" style="width: 200px;height:200px;">
+    </div><br>
+    <h2 style="font-family: Arial; text-align: center; color: black ;">KUESIONER PENDATAAN<br> PRODUKSI PERIKANAN TANGKAP</h2>
+    <div class="wrapper">
+        <div class="title">
+            BLOK II. IDENTITAS USAHA
+        </div>
+        <div class="form">
+            <div class="inputfield">
+                <label>Nama RTP/Perusahaan Perikanan</label>
+                <input type="text" class="input">
+            </div>
+            <div class="inputfield">
+                <label>Nomor Induk Kependudukan (NIK)/SIUP</label>
+                <input type="text" class="input">
+            </div>
+            <div class="inputfield">
+                <label>Jenis Usaha</label>
+                <div class="custom_select">
+                    <select>
+                        <option value="">Pilih</option>
+                        <option value="laut">Penangkapan Ikan di Laut</option>
+                        <option value="perairan">Penangkapan Ikan di Perairan Umum</option>
+                    </select>
+                </div>
+            </div>
+            <div class="inputfield">
+                <label>Jenis Perairan</label>
+                <div class="custom_select">
+                    <select>
+                        <option value="">Pilih</option>
+                        <option value="sungai">Sungai</option>
+                        <option value="danau">Danau</option>
+                        <option value="waduk">Waduk</option>
+                        <option value="rawa">Rawa</option>
+                        <option value="lain">Genangan Air Lainnya</option>  
+                    </select>
+                </div>
+            </div>
+            <div class="inputfield">
+                <label>Nama Ekosistem</label>
+                <input type="text" class="input">
+            </div>
+            <div class="inputfield">
+                <label>Sarana Penangkapan</label>
+                <div class="custom_select">
+                    <select>
+                        <option value="">Pilih</option>
+                        <option value="sungai">Tanpa Perahu</option>
+                        <option value="danau">Perahu Tanpa Motor</option>
+                        <option value="waduk">Perahu Motor Tempel</option>
+                        <option value="rawa">Kapal Motor</option>
+                    </select>
+                </div>
+            </div>
+            <div class="inputfield">
+                <label>Ukuran Perahu/Kapal (GT)</label>
+                <input type="text" class="input">
+            </div>
+            <div class="inputfield">
+                <label>Jumlah ABK</label>
+                <input type="number" class="angka">Orang
+            </div>
+            <div class="inputfield">
+                <label>Jenis Alat Tangkap</label>
+                <input type="text" class="input">
+            </div>
+            <div class="inputfield">
+                <label>Wilayah Penangkapan Ikan</label>
+                <input type="text" class="input">
+            </div>
+            <div class="inputfield">
+                <label>Daerah Operasi Penangkapan (Perairan)</label>
+                <input type="text" class="input">
+            </div>
+            <div class="inputfield">
+                <label>Daerah Asal Unit Penangkapan Ikan</label>
+                <input type="text" class="input">
+            </div>
+            <a href="blok1.html" class="previous round">&#8249;</a>
+            <a href="blok3.html" class="next round">&#8250;</a>
+        </div>
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+        var mybutton = document.getElementById("myBtn");
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+</body>
+
+</html>
